@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable youtube-dl via Homebrew
+  package:
+    name: youtube-dl
+    state: latest
+  when: ansible_os_family == "Darwin"
